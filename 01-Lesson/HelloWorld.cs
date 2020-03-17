@@ -13,6 +13,9 @@ namespace _01_HelloWorld1
             // Print output to the console: 
             // Shortcut: c w tab tab: 
             Console.WriteLine("Hello world");
+            
+            // Only for terminal not to shutdown fast:
+            Console.ReadKey();
         }
     }
 }
