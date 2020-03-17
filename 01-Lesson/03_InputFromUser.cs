@@ -17,6 +17,10 @@ namespace _01_HelloWorld1
             Console.WriteLine($"You said: {str}");
 
             Console.WriteLine($"2+5 = {2+5}");
+            
+            // optional
+            Console.ReadKey();
+
         }
     }
 }
