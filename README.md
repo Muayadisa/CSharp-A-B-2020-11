@@ -74,3 +74,5 @@
     * Stack
     * Dictionary
 * Test preparation
+
+> Most of the materials in this course are from: [Anna Karpf](https://github.com/AnnaKarpf)
