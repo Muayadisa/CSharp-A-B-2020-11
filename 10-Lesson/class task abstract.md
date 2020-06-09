@@ -15,7 +15,6 @@
 
 - Properties:
   - name
-  - grade
   - semester
   - teacher (type Teacher)
 
