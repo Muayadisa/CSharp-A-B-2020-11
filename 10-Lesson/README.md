@@ -1,10 +1,28 @@
 # Lesson 10
 
-topics:
+## Enum
 
-- Enum
-- Absract
-- sealed class
+**Enum** - Enumeration type. Is a collection of constant values.
+index starts from 0, as long as we do not define another number.
+* **Why use enum?** - very comfortable to define constants in a list.
+* **Enum examples:** - Seasons, DaysOfWeek, Colors, Months. 
+
+```cs
+enum x
+{
+    A,
+    B,
+    C
+}
+```
+
+* Access -
+
+```cs
+x x1 = x.A;
+// or
+x x2 = (x)0;
+```
 
 ## Sealed class:
 
