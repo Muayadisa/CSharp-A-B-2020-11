@@ -19,14 +19,14 @@
   - semester
   - teacher (type Teacher)
 
-### Write class: `Student` that inherites from `Person`
+### Write sealed class: `Student` that inherites from `Person`
 
 - Properties:
   - Year
   - grades avg
   - Array of courses. (type: Course class)
 
-### Write class: `Teacher` that inherites from `Person`
+### Write sealed class: `Teacher` that inherites from `Person`
 
 - Properties:
   - ID employee
