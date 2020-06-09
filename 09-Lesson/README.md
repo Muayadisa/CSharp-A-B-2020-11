@@ -56,6 +56,19 @@ class B:A{}
 
 > to access attributes from the sub-class `B` - we must convert the type of that instance.
 
+##### override to properties:
+
+```cs
+class A
+{
+    public virtual int num { get; set; }
+}
+class B:A
+{
+    public override int num { get; set; }
+}
+```
+
 ## Casting:
 
 Check the type of an instance:
@@ -74,8 +87,10 @@ Convert type of an instance to a diffrent class:
 
 ```cs
 A a1 = new B();
+
 if(a1 is B){
-    a1 = (B)a1;
+    // casting:
+    B b1 = (B)a2;
 }
 ```
 
@@ -133,4 +148,83 @@ class A
 
 ## Overloading - העמסה
 
+Overloading allows us to create more than 1 function with the same name, but each function will have diffrent parameters.
+
+The program will know which function to call according to:
+
+1. Number of properties
+2. Type of properties
+
+> Overloading is known in constructors: we can create many constructors, as long as they get diffrent variables.
+
+```cs
+static bool isEqual(int x, int y)
+{
+    return x == y;
+}
+
+static bool isEqual(string x, string y)
+{
+    return x == y;
+}
+
+static bool isEqual(bool x, bool y)
+{
+    return x == y;
+}
+```
+
 ## Generic - כללי
+
+The use of generic is to avoid code repetition.
+
+- Here - a generic function. `x` can be from any type.
+
+```cs
+static void func<T>(T x)
+{
+    Console.WriteLine($"x = {x}");
+}
+```
+
+- Here - we use two diffrent types. (it can be also the same type)
+
+```cs
+static void func<T, S>(T x, S y)
+{
+    Console.WriteLine($"x = {x}, y = {y}");
+}
+```
+
+#### Implicit - בצורה מרומזת
+
+Call a function in implicit way:
+
+```cs
+func(3, 7);
+func(4, "hello");
+```
+
+#### Explicit - בצורה מפורשת
+
+Call a function in Explicit way (define the types in the function call):
+
+```cs
+func<int, int>(3, 7);
+func<int, string>(4, "hello");
+```
+
+> Note: we use `Implicit` and `Explicit` in casting.
+
+## Where
+
+Where is a keyword that represts the type that the function can take.
+
+- In this example: **x** can be only from type **Person** class, or subclasses of **Person** class
+
+```cs
+static void Func<T>(T x) where T : Person
+{
+    Console.WriteLine($"x = {x}");
+}
+```
