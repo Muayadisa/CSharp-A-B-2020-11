@@ -58,21 +58,18 @@
 * Readonly
 * Override
 * Generic
+
 ## Lesson 10
 * Enum
 * Sealed class
 > * Abstraction
-* class task
+* Abstract class
+* Error handling
+
 ## Lesson 11
 * Interface
 * Namespace
-* Error handling
-## Lesson 12
-* Collections:
-    * List
-    * Queue
-    * Stack
-    * Dictionary
 * Test preparation
 
 > Most of the materials in this course are from: [Anna Karpf](https://github.com/AnnaKarpf)
+
