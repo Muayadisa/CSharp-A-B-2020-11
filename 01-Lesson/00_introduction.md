@@ -10,6 +10,8 @@
 * פיתוח מערכות לאתרי אינטרנט מתקדמים בעזרת ASP.NET ו- HTML5
 * פיתוח אפליקציות למכשירי Windows Phone ול- Windows 8
 </div>
+
+
 ### way to exit console only after press
 ```cs
 Console.ReadKey();
