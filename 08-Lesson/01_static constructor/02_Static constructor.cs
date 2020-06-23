@@ -32,7 +32,7 @@ namespace Lesson8
 
             Console.ReadKey();
             /*
-                This is a static constructor!
+                18
                 Name is : John
                 Name is : Tom
                 Name is : Alice
